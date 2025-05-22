@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D46D33CD2DDF0D72003A16CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D46D33AB2DDF0D70003A16CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D46D33B22DDF0D70003A16CB;
+			remoteInfo = PrimoMedium;
+		};
+		D46D33D72DDF0D72003A16CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D46D33AB2DDF0D70003A16CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D46D33B22DDF0D70003A16CB;
+			remoteInfo = PrimoMedium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D46D33B32DDF0D70003A16CB /* PrimoMedium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimoMedium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46D33CC2DDF0D72003A16CB /* PrimoMediumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimoMediumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46D33D62DDF0D72003A16CB /* PrimoMediumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimoMediumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D46D33DE2DDF0D72003A16CB /* Exceptions for "PrimoMedium" folder in "PrimoMedium" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D46D33B22DDF0D70003A16CB /* PrimoMedium */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D46D33B52DDF0D70003A16CB /* PrimoMedium */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D46D33DE2DDF0D72003A16CB /* Exceptions for "PrimoMedium" folder in "PrimoMedium" target */,
+			);
+			path = PrimoMedium;
+			sourceTree = "<group>";
+		};
+		D46D33CF2DDF0D72003A16CB /* PrimoMediumTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrimoMediumTests;
+			sourceTree = "<group>";
+		};
+		D46D33D92DDF0D72003A16CB /* PrimoMediumUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrimoMediumUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D46D33B02DDF0D70003A16CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D33C92DDF0D72003A16CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D33D32DDF0D72003A16CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D46D33AA2DDF0D70003A16CB = {
+			isa = PBXGroup;
+			children = (
+				D46D33B52DDF0D70003A16CB /* PrimoMedium */,
+				D46D33CF2DDF0D72003A16CB /* PrimoMediumTests */,
+				D46D33D92DDF0D72003A16CB /* PrimoMediumUITests */,
+				D46D33B42DDF0D70003A16CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D46D33B42DDF0D70003A16CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D46D33B32DDF0D70003A16CB /* PrimoMedium.app */,
+				D46D33CC2DDF0D72003A16CB /* PrimoMediumTests.xctest */,
+				D46D33D62DDF0D72003A16CB /* PrimoMediumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D46D33B22DDF0D70003A16CB /* PrimoMedium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46D33DF2DDF0D72003A16CB /* Build configuration list for PBXNativeTarget "PrimoMedium" */;
+			buildPhases = (
+				D46D33AF2DDF0D70003A16CB /* Sources */,
+				D46D33B02DDF0D70003A16CB /* Frameworks */,
+				D46D33B12DDF0D70003A16CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D46D33B52DDF0D70003A16CB /* PrimoMedium */,
+			);
+			name = PrimoMedium;
+			packageProductDependencies = (
+			);
+			productName = PrimoMedium;
+			productReference = D46D33B32DDF0D70003A16CB /* PrimoMedium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D46D33CB2DDF0D72003A16CB /* PrimoMediumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46D33E42DDF0D72003A16CB /* Build configuration list for PBXNativeTarget "PrimoMediumTests" */;
+			buildPhases = (
+				D46D33C82DDF0D72003A16CB /* Sources */,
+				D46D33C92DDF0D72003A16CB /* Frameworks */,
+				D46D33CA2DDF0D72003A16CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D46D33CE2DDF0D72003A16CB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D46D33CF2DDF0D72003A16CB /* PrimoMediumTests */,
+			);
+			name = PrimoMediumTests;
+			packageProductDependencies = (
+			);
+			productName = PrimoMediumTests;
+			productReference = D46D33CC2DDF0D72003A16CB /* PrimoMediumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D46D33D52DDF0D72003A16CB /* PrimoMediumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46D33E72DDF0D72003A16CB /* Build configuration list for PBXNativeTarget "PrimoMediumUITests" */;
+			buildPhases = (
+				D46D33D22DDF0D72003A16CB /* Sources */,
+				D46D33D32DDF0D72003A16CB /* Frameworks */,
+				D46D33D42DDF0D72003A16CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D46D33D82DDF0D72003A16CB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D46D33D92DDF0D72003A16CB /* PrimoMediumUITests */,
+			);
+			name = PrimoMediumUITests;
+			packageProductDependencies = (
+			);
+			productName = PrimoMediumUITests;
+			productReference = D46D33D62DDF0D72003A16CB /* PrimoMediumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D46D33AB2DDF0D70003A16CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D46D33B22DDF0D70003A16CB = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D46D33CB2DDF0D72003A16CB = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D46D33B22DDF0D70003A16CB;
+					};
+					D46D33D52DDF0D72003A16CB = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D46D33B22DDF0D70003A16CB;
+					};
+				};
+			};
+			buildConfigurationList = D46D33AE2DDF0D70003A16CB /* Build configuration list for PBXProject "PrimoMedium" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D46D33AA2DDF0D70003A16CB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D46D33B42DDF0D70003A16CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D46D33B22DDF0D70003A16CB /* PrimoMedium */,
+				D46D33CB2DDF0D72003A16CB /* PrimoMediumTests */,
+				D46D33D52DDF0D72003A16CB /* PrimoMediumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D46D33B12DDF0D70003A16CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D33CA2DDF0D72003A16CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D33D42DDF0D72003A16CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D46D33AF2DDF0D70003A16CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D33C82DDF0D72003A16CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46D33D22DDF0D72003A16CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D46D33CE2DDF0D72003A16CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D46D33B22DDF0D70003A16CB /* PrimoMedium */;
+			targetProxy = D46D33CD2DDF0D72003A16CB /* PBXContainerItemProxy */;
+		};
+		D46D33D82DDF0D72003A16CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D46D33B22DDF0D70003A16CB /* PrimoMedium */;
+			targetProxy = D46D33D72DDF0D72003A16CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D46D33E02DDF0D72003A16CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQLG7C29F5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrimoMedium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mew.PrimoMedium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D46D33E12DDF0D72003A16CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQLG7C29F5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrimoMedium/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mew.PrimoMedium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D46D33E22DDF0D72003A16CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D46D33E32DDF0D72003A16CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D46D33E52DDF0D72003A16CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQLG7C29F5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mew.PrimoMediumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrimoMedium.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrimoMedium";
+			};
+			name = Debug;
+		};
+		D46D33E62DDF0D72003A16CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQLG7C29F5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mew.PrimoMediumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrimoMedium.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrimoMedium";
+			};
+			name = Release;
+		};
+		D46D33E82DDF0D72003A16CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQLG7C29F5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mew.PrimoMediumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrimoMedium;
+			};
+			name = Debug;
+		};
+		D46D33E92DDF0D72003A16CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QQLG7C29F5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mew.PrimoMediumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrimoMedium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D46D33AE2DDF0D70003A16CB /* Build configuration list for PBXProject "PrimoMedium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46D33E22DDF0D72003A16CB /* Debug */,
+				D46D33E32DDF0D72003A16CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46D33DF2DDF0D72003A16CB /* Build configuration list for PBXNativeTarget "PrimoMedium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46D33E02DDF0D72003A16CB /* Debug */,
+				D46D33E12DDF0D72003A16CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46D33E42DDF0D72003A16CB /* Build configuration list for PBXNativeTarget "PrimoMediumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46D33E52DDF0D72003A16CB /* Debug */,
+				D46D33E62DDF0D72003A16CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46D33E72DDF0D72003A16CB /* Build configuration list for PBXNativeTarget "PrimoMediumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46D33E82DDF0D72003A16CB /* Debug */,
+				D46D33E92DDF0D72003A16CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D46D33AB2DDF0D70003A16CB /* Project object */;
+}
