@@ -1,0 +1,6 @@
+framework module Pods_PrimoMediumTests {
+  umbrella header "Pods-PrimoMediumTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

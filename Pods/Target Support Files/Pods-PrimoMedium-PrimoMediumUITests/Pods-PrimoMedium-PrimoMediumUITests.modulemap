@@ -1,0 +1,6 @@
+framework module Pods_PrimoMedium_PrimoMediumUITests {
+  umbrella header "Pods-PrimoMedium-PrimoMediumUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

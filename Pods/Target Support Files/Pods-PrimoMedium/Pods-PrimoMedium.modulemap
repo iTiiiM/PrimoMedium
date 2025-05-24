@@ -1,0 +1,6 @@
+framework module Pods_PrimoMedium {
+  umbrella header "Pods-PrimoMedium-umbrella.h"
+
+  export *
+  module * { export * }
+}

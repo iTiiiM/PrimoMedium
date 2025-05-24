@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		488371084C1934689FF0E689 /* Pods_PrimoMedium_PrimoMediumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDBEFEA43B4A064ACA262C04 /* Pods_PrimoMedium_PrimoMediumUITests.framework */; };
+		5F1C386E78E6659B7C9CD28D /* Pods_PrimoMedium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31192FE8DF2DAE6074C914C4 /* Pods_PrimoMedium.framework */; };
+		86D228D6D17EA1D1089C28AD /* Pods_PrimoMediumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73DA713F7B7541B9373CE16 /* Pods_PrimoMediumTests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D46D33CD2DDF0D72003A16CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086E5C461B48BD6F94690141 /* Pods-PrimoMedium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimoMedium.debug.xcconfig"; path = "Target Support Files/Pods-PrimoMedium/Pods-PrimoMedium.debug.xcconfig"; sourceTree = "<group>"; };
+		0FABDC90399BC3DF4165F08A /* Pods-PrimoMedium-PrimoMediumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimoMedium-PrimoMediumUITests.release.xcconfig"; path = "Target Support Files/Pods-PrimoMedium-PrimoMediumUITests/Pods-PrimoMedium-PrimoMediumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		31192FE8DF2DAE6074C914C4 /* Pods_PrimoMedium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrimoMedium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C920F3876E98291E1CED93 /* Pods-PrimoMedium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimoMedium.release.xcconfig"; path = "Target Support Files/Pods-PrimoMedium/Pods-PrimoMedium.release.xcconfig"; sourceTree = "<group>"; };
+		94998A0E9C96BDF629AD7683 /* Pods-PrimoMediumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimoMediumTests.release.xcconfig"; path = "Target Support Files/Pods-PrimoMediumTests/Pods-PrimoMediumTests.release.xcconfig"; sourceTree = "<group>"; };
+		94D4352066E093ABABB50696 /* Pods-PrimoMediumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimoMediumTests.debug.xcconfig"; path = "Target Support Files/Pods-PrimoMediumTests/Pods-PrimoMediumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDBEFEA43B4A064ACA262C04 /* Pods_PrimoMedium_PrimoMediumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrimoMedium_PrimoMediumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46D33B32DDF0D70003A16CB /* PrimoMedium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrimoMedium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46D33CC2DDF0D72003A16CB /* PrimoMediumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimoMediumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46D33D62DDF0D72003A16CB /* PrimoMediumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimoMediumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8A6826E3B0E7B72BC1B9F0 /* Pods-PrimoMedium-PrimoMediumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrimoMedium-PrimoMediumUITests.debug.xcconfig"; path = "Target Support Files/Pods-PrimoMedium-PrimoMediumUITests/Pods-PrimoMedium-PrimoMediumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E73DA713F7B7541B9373CE16 /* Pods_PrimoMediumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrimoMediumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,11 +65,15 @@
 		};
 		D46D33CF2DDF0D72003A16CB /* PrimoMediumTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PrimoMediumTests;
 			sourceTree = "<group>";
 		};
 		D46D33D92DDF0D72003A16CB /* PrimoMediumUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = PrimoMediumUITests;
 			sourceTree = "<group>";
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1C386E78E6659B7C9CD28D /* Pods_PrimoMedium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D228D6D17EA1D1089C28AD /* Pods_PrimoMediumTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +100,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488371084C1934689FF0E689 /* Pods_PrimoMedium_PrimoMediumUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1814A80B1D707CC80A9EF917 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				086E5C461B48BD6F94690141 /* Pods-PrimoMedium.debug.xcconfig */,
+				62C920F3876E98291E1CED93 /* Pods-PrimoMedium.release.xcconfig */,
+				DE8A6826E3B0E7B72BC1B9F0 /* Pods-PrimoMedium-PrimoMediumUITests.debug.xcconfig */,
+				0FABDC90399BC3DF4165F08A /* Pods-PrimoMedium-PrimoMediumUITests.release.xcconfig */,
+				94D4352066E093ABABB50696 /* Pods-PrimoMediumTests.debug.xcconfig */,
+				94998A0E9C96BDF629AD7683 /* Pods-PrimoMediumTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3CCF03900DEB5B2374AEFCA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31192FE8DF2DAE6074C914C4 /* Pods_PrimoMedium.framework */,
+				BDBEFEA43B4A064ACA262C04 /* Pods_PrimoMedium_PrimoMediumUITests.framework */,
+				E73DA713F7B7541B9373CE16 /* Pods_PrimoMediumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D46D33AA2DDF0D70003A16CB = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +138,8 @@
 				D46D33CF2DDF0D72003A16CB /* PrimoMediumTests */,
 				D46D33D92DDF0D72003A16CB /* PrimoMediumUITests */,
 				D46D33B42DDF0D70003A16CB /* Products */,
+				1814A80B1D707CC80A9EF917 /* Pods */,
+				3CCF03900DEB5B2374AEFCA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D46D33DF2DDF0D72003A16CB /* Build configuration list for PBXNativeTarget "PrimoMedium" */;
 			buildPhases = (
+				726A4D0CD6E76BD7DA97B40B /* [CP] Check Pods Manifest.lock */,
 				D46D33AF2DDF0D70003A16CB /* Sources */,
 				D46D33B02DDF0D70003A16CB /* Frameworks */,
 				D46D33B12DDF0D70003A16CB /* Resources */,
+				8B779153FE118178F5B593AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +174,6 @@
 				D46D33B52DDF0D70003A16CB /* PrimoMedium */,
 			);
 			name = PrimoMedium;
-			packageProductDependencies = (
-			);
 			productName = PrimoMedium;
 			productReference = D46D33B32DDF0D70003A16CB /* PrimoMedium.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D46D33E42DDF0D72003A16CB /* Build configuration list for PBXNativeTarget "PrimoMediumTests" */;
 			buildPhases = (
+				217013373463C4E326A48957 /* [CP] Check Pods Manifest.lock */,
 				D46D33C82DDF0D72003A16CB /* Sources */,
 				D46D33C92DDF0D72003A16CB /* Frameworks */,
 				D46D33CA2DDF0D72003A16CB /* Resources */,
@@ -147,8 +196,6 @@
 				D46D33CF2DDF0D72003A16CB /* PrimoMediumTests */,
 			);
 			name = PrimoMediumTests;
-			packageProductDependencies = (
-			);
 			productName = PrimoMediumTests;
 			productReference = D46D33CC2DDF0D72003A16CB /* PrimoMediumTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D46D33E72DDF0D72003A16CB /* Build configuration list for PBXNativeTarget "PrimoMediumUITests" */;
 			buildPhases = (
+				7B6CE2986CC2BBF0893EDF8D /* [CP] Check Pods Manifest.lock */,
 				D46D33D22DDF0D72003A16CB /* Sources */,
 				D46D33D32DDF0D72003A16CB /* Frameworks */,
 				D46D33D42DDF0D72003A16CB /* Resources */,
+				13BEC77BBD97001E97F0FD9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,8 +219,6 @@
 				D46D33D92DDF0D72003A16CB /* PrimoMediumUITests */,
 			);
 			name = PrimoMediumUITests;
-			packageProductDependencies = (
-			);
 			productName = PrimoMediumUITests;
 			productReference = D46D33D62DDF0D72003A16CB /* PrimoMediumUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +291,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13BEC77BBD97001E97F0FD9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrimoMedium-PrimoMediumUITests/Pods-PrimoMedium-PrimoMediumUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrimoMedium-PrimoMediumUITests/Pods-PrimoMedium-PrimoMediumUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrimoMedium-PrimoMediumUITests/Pods-PrimoMedium-PrimoMediumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		217013373463C4E326A48957 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrimoMediumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		726A4D0CD6E76BD7DA97B40B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrimoMedium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B6CE2986CC2BBF0893EDF8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrimoMedium-PrimoMediumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B779153FE118178F5B593AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrimoMedium/Pods-PrimoMedium-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrimoMedium/Pods-PrimoMedium-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrimoMedium/Pods-PrimoMedium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D46D33AF2DDF0D70003A16CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +434,7 @@
 /* Begin XCBuildConfiguration section */
 		D46D33E02DDF0D72003A16CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086E5C461B48BD6F94690141 /* Pods-PrimoMedium.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +463,7 @@
 		};
 		D46D33E12DDF0D72003A16CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C920F3876E98291E1CED93 /* Pods-PrimoMedium.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +611,7 @@
 		};
 		D46D33E52DDF0D72003A16CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D4352066E093ABABB50696 /* Pods-PrimoMediumTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +631,7 @@
 		};
 		D46D33E62DDF0D72003A16CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94998A0E9C96BDF629AD7683 /* Pods-PrimoMediumTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +651,7 @@
 		};
 		D46D33E82DDF0D72003A16CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8A6826E3B0E7B72BC1B9F0 /* Pods-PrimoMedium-PrimoMediumUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -514,6 +669,7 @@
 		};
 		D46D33E92DDF0D72003A16CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FABDC90399BC3DF4165F08A /* Pods-PrimoMedium-PrimoMediumUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
