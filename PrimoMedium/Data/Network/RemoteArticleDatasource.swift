@@ -6,23 +6,20 @@
 //
 
 import Foundation
+
 protocol RemoteArticleDataSource {
-    func fetchArticles(completion: @escaping ([Article]) -> Void)
+    func fetchArticles() async throws -> [Article]
 }
 
 class APIArticleDataSource: RemoteArticleDataSource {
-    func fetchArticles(completion: @escaping ([Article]) -> Void) {
-        // Fake example, replace with real network call
-        let urlRequest = URLRequest(
-            url: URL(
-                string: "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@JasonShen"
-            )!
-        )
-        URLSession.shared.data(with: urlRequest) { data, response, error in
-            guard let data = data as? [Article] else { return completion([])}
-            completion(data)
-        }
-
+    
+    init() {} 
+    func fetchArticles() async throws -> [Article] {
+        let url = URL(string: "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@JasonShen")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        let decoder = JSONDecoder()
+        let response = try decoder.decode([Article].self, from: data)
+        return response
     }
 }
-

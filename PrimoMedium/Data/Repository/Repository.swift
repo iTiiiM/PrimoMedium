@@ -7,27 +7,38 @@
 
 // Data/Repository/ArticleRepository.swift
 protocol ArticleRepository {
-    func getArticles(completion: @escaping ([Article]) -> Void)
+    func getArticles() async throws -> [Article]
 }
 
 class DefaultArticleRepository: ArticleRepository {
     let localDataSource: LocalArticleDataSource
     let remoteDataSource: RemoteArticleDataSource
     
-    init(local: LocalArticleDataSource, remote: RemoteArticleDataSource) {
+    init(
+        local: LocalArticleDataSource = InMemoryLocalArticleDataSource.init(),
+        remote: RemoteArticleDataSource = APIArticleDataSource.init()
+    ) {
         self.localDataSource = local
         self.remoteDataSource = remote
     }
     
-    func getArticles(completion: @escaping ([Article]) -> Void) {
+    func getArticles() async throws -> [Article] {
         let localArticles = localDataSource.fetchArticles()
         if !localArticles.isEmpty {
-            completion(localArticles)
+            return localArticles
         } else {
-            remoteDataSource.fetchArticles { remoteArticles in
-                self.localDataSource.saveArticles(remoteArticles)
-                completion(remoteArticles)
+        
+            Task {
+                do {
+                    let articles = try await remoteDataSource.fetchArticles()
+                    return articles
+                    print("Fetched \(articles.count) articles")
+                } catch {
+                    print("Failed to fetch articles: \(error)")
+                    return []
+                }
             }
+            return []
         }
     }
 }

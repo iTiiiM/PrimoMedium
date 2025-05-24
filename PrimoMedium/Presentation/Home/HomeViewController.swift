@@ -12,7 +12,11 @@ class HomeViewController: UIViewController {
     var pageTitle = UILabel()
     var separatorView = UIView()
     var feedTableView = UITableView()
-    let viewModel = HomeViewModel()
+    let viewModel = HomeViewModel(
+        loadArticleUseCase: LoadArticleUseCaseImpl(
+            defaultArticleRepository: DefaultArticleRepository()
+        )
+    )
 
     override func viewDidLoad() {
         super.viewDidLoad()
