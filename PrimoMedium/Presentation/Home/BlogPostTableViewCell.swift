@@ -6,12 +6,6 @@
 //
 import UIKit
 
-struct BlogPost {
-    let title: String
-    let description: String
-    let date: String
-}
-
 class BlogPostCell: UITableViewCell {
     // MARK: - UI Elements
     let titleLabel = UILabel()
