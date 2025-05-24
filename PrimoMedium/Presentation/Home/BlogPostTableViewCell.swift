@@ -26,7 +26,7 @@ class BlogPostCell: UITableViewCell {
     
     // MARK: - Setup
     
-    func configure(with post: BlogPost) {
+    func configure(with post: Article) {
         titleLabel.text = post.title
         descriptionLabel.text = post.description
         dateLabel.text = post.date

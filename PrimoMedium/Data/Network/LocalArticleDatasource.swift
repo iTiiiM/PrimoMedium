@@ -6,9 +6,10 @@
 //
 
 import CoreData
+import RxSwift
 
 protocol LocalArticleDataSource {
-    func fetchArticles() -> [Article]
+    func fetchArticles() -> Observable<[Article]>
     func saveArticles(_ articles: [Article])
 }
 
@@ -22,21 +23,21 @@ class InMemoryLocalArticleDataSource: LocalArticleDataSource {
         self.context = context
     }
     
-    func fetchArticles() -> [Article] {
+    func fetchArticles() -> Observable<[Article]> {
         let request: NSFetchRequest<ArticleEntity> = ArticleEntity.fetchRequest()
         do {
             let entities = try context.fetch(request)
-            return entities
+            return .just(entities
                 .map {
                     Article(
                         title: $0.title ?? "",
-                        author: $0.author ?? "",
-                        content: $0.content ?? ""
+                        description: $0.description ?? "",
+                        date: $0.date ?? ""
                     )
-                }
+                })
         } catch {
             print("Failed to fetch articles: \(error)")
-            return []
+            return .just([])
         }
     }
     
@@ -44,8 +45,8 @@ class InMemoryLocalArticleDataSource: LocalArticleDataSource {
         for article in articles {
             let entity = ArticleEntity(context: context)
             entity.title = article.title
-            entity.author = article.author
-            entity.content = article.content
+//            entity.description = article.description
+            entity.date = article.date
         }
         
         do {

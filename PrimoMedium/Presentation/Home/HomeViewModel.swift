@@ -5,40 +5,78 @@
 //  Created by Mew on 22/5/2568 BE.
 //
 
+import RxSwift
+import RxCocoa
+
 protocol HomeViewModelInput {
-    func viewDidLoad()
+    var viewDidLoad: PublishRelay<Void> { get set }
 }
 
 protocol HomeViewModelOutput {
-    var articles: [Article] { get }
+    var articles: Driver<[Article]> { get }
 }
 
 typealias HomeViewModelIO = HomeViewModelInput & HomeViewModelOutput
 
-struct HomeViewModel: HomeViewModelIO {
+final class HomeViewModel: HomeViewModelIO {
+
+    var viewDidLoad: PublishRelay<Void> = .init()
 
 
-    var articles: [Article]
+    private let _articles = BehaviorRelay<[Article]>(value: [])
+    
+    var articles: Driver<[Article]> {
+        _articles.asDriver(onErrorJustReturn: [])
+    }
+    
+    
+    private let disposeBag = DisposeBag()
+    
 
     private let loadArticleUseCase: LoadArticleUseCase
     
     init(loadArticleUseCase: LoadArticleUseCase) {
         self.loadArticleUseCase = loadArticleUseCase
+        
     }
     
-    func viewDidLoad() async {
-        articles = try await loadArticleUseCase.execute()
+    func bindViewModel() {
+        viewDidLoad.withUnretained(self)
+            .flatMapLatest { owner, _ in
+                owner.loadArticleUseCase.execute()
+            }
+            .bind(to: _articles)
+            .disposed(by: disposeBag)
+//
+//        articles = viewDidLoad
+//            .withUnretained(self)
+//            .flatMap {
+//                _ in self.loadArticleUseCase.execute()
+//            }
+//            .asDriver(onErrorJustReturn: [])
+//        
+//        articles = viewDidLoad
+//            .withUnretained(self)
+//            .map { owner, _ in
+//                print("MEWW VIEWDIDLOAD 2")
+//                return owner.blogPosts
+//            }
+//            .asDriver(onErrorJustReturn: [])
     }
+    
+    
+    
+    
     
     
     
     
     let blogPosts = [
-        BlogPost(title: "Swift Concurrency", description: "Learn about async/await in Swift.",
+        Article(title: "Swift Concurrency", description: "Learn about async/await in Swift.",
                  date: "Jan 5, 2025"),
-        BlogPost(title: "UIKit vs SwiftUI", description: "A comparison of two UI frameworks.",
+        Article(title: "UIKit vs SwiftUI", description: "A comparison of two UI frameworks.",
                  date: "Nov 11, 2019"),
-        BlogPost(
+        Article(
             title: "Networking in iOS",
             description: "Handling APIs with URLSession.",
             date: "Oct 23, 2022"

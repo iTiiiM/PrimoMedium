@@ -5,7 +5,7 @@
 //  Created by Mew on 23/5/2568 BE.
 //
 
-struct Article: Codable {
+struct ArticleDetail: Codable {
     let title: String
     let author: String
     let content: String

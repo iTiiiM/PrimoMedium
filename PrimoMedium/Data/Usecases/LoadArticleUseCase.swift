@@ -4,9 +4,10 @@
 //
 //  Created by Mew on 24/5/2568 BE.
 //
+import RxSwift
 
 protocol LoadArticleUseCase {
-    func execute() async throws -> [Article]
+    func execute() -> Observable<[Article]>
 }
 
 final class LoadArticleUseCaseImpl: LoadArticleUseCase {
@@ -16,8 +17,7 @@ final class LoadArticleUseCaseImpl: LoadArticleUseCase {
         self.defaultArticleRepository = defaultArticleRepository
     }
     
-    func execute() async throws -> [Article] {
-        let articles = try await defaultArticleRepository.getArticles()
-        return articles
+    func execute() -> Observable<[Article]> {
+        return defaultArticleRepository.getArticles()
     }
 }

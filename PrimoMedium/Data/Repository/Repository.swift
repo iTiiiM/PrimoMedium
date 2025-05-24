@@ -5,9 +5,11 @@
 //  Created by Mew on 23/5/2568 BE.
 //
 
+import RxSwift
+
 // Data/Repository/ArticleRepository.swift
 protocol ArticleRepository {
-    func getArticles() async throws -> [Article]
+    func getArticles() -> Observable<[Article]>
 }
 
 class DefaultArticleRepository: ArticleRepository {
@@ -22,23 +24,49 @@ class DefaultArticleRepository: ArticleRepository {
         self.remoteDataSource = remote
     }
     
-    func getArticles() async throws -> [Article] {
+    func getArticles() -> Observable<[Article]> {
+//        return localDataSource.fetchArticles()
+//            .flatMap { local in
+//                if !local.isEmpty {
+//                    return Observable.just(local)
+//                } else {
+//                    return Observable.create { observer in
+//                        Task {
+//                            do {
+//                                let remote = try await self.remoteDataSource.fetchArticles()
+//                                
+//                                observer.onCompleted()
+//                            } catch {
+//                                print("Failed to fetch remote articles: \(error)")
+//                                observer.onNext([]) // fallback value
+//                                observer.onCompleted()
+//                            }
+//                        }
+//                        return Disposables.create()
+//                    }
+//                }
+//            }
         let localArticles = localDataSource.fetchArticles()
-        if !localArticles.isEmpty {
-            return localArticles
-        } else {
-        
-            Task {
-                do {
-                    let articles = try await remoteDataSource.fetchArticles()
-                    return articles
-                    print("Fetched \(articles.count) articles")
-                } catch {
-                    print("Failed to fetch articles: \(error)")
-                    return []
-                }
+        return localArticles.flatMapLatest {
+            if !$0.isEmpty {
+                return localArticles
+            } else {
+                return self.remoteDataSource.fetchArticles()
             }
-            return []
+//                return Observable.create { observer in
+//                    Task {
+//                        do {
+//                            let remote = try await self.remoteDataSource.fetchArticles()
+//                            observer.onNext(remote)
+//                            observer.onCompleted()
+//                        } catch {
+//                            print("Failed to fetch remote articles: \(error)")
+//                            observer.onNext([])
+//                            observer.onCompleted()
+//                        }
+//                    }
+//                    return Disposables.create()
+//            }
         }
-    }
+}
 }
