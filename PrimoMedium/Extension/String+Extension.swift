@@ -11,11 +11,11 @@ extension String {
     func formatAPIDate() -> String {
         let inputFormatter = DateFormatter()
         inputFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        inputFormatter.locale = Locale(identifier: "en_US_POSIX") // ensures consistent parsing
+        inputFormatter.locale = Locale(identifier: "en_US_POSIX")
         
         if let date = inputFormatter.date(from: self) {
             let outputFormatter = DateFormatter()
-            outputFormatter.dateFormat = "d MMM yyyy" // e.g., "14 May 2025"
+            outputFormatter.dateFormat = "d MMM yyyy" 
             outputFormatter.locale = Locale(identifier: "en_US")
             
             return outputFormatter.string(from: date)
@@ -24,11 +24,16 @@ extension String {
         return "nil"
     }
     
-    func formatHTMLToString() -> NSAttributedString {
+    func formatHTMLToString(showImageTag: Bool = false) -> NSAttributedString {
+        let htmlData: String
+        if !showImageTag {
+             htmlData = self.replacingOccurrences(of: "<img[^>]+>", with: "", options: .regularExpression)
+        } else {
+            htmlData = self
+        }
+      
         
-        let dataWithoutImage = self.replacingOccurrences(of: "<img[^>]+>", with: "", options: .regularExpression)
-        
-        guard let data = dataWithoutImage.description.data(using: .utf8) else {
+        guard let data = htmlData.description.data(using: .utf8) else {
             return NSAttributedString(string: "")
         }
         

@@ -32,6 +32,8 @@ class InMemoryLocalArticleDataSource: LocalArticleDataSource {
                     Article(
                         title: $0.title ?? "",
                         detail: $0.detail ?? "",
+                        content: $0.content ?? "",
+                        author: $0.author ?? "",
                         date: $0.date ?? ""
                     )
                 })

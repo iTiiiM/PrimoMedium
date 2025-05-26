@@ -23,12 +23,14 @@ class APIArticleDataSource: RemoteArticleDataSource {
  response,
  error in
                 if let error = error {
-                    observer.onError(error)
+                    observer.onNext([])
+                    
                     return
                 }
                 
                 guard let data = data else {
-                    observer.onError(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "No data"]))
+                    observer.onNext([])
+
                     return
                 }
                 
@@ -40,7 +42,7 @@ class APIArticleDataSource: RemoteArticleDataSource {
                     observer.onNext(decoded.items ?? [])
                     observer.onCompleted()
                 } catch {
-                    observer.onError(error)
+                    observer.onNext([])
                 }
             }
             

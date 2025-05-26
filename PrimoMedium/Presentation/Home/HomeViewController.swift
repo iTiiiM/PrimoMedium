@@ -43,22 +43,22 @@ class HomeViewController: UIViewController {
             cell.configure(with: article)
         }.disposed(by: disposeBag)
         
-        
-        
         feedTableView.rx.modelSelected(Article.self)
             .withUnretained(self)
-            .subscribe(onNext: { article in
+            .subscribe(onNext: { owner, article in
 
                 let vc = ReaderWebViewController()
-                vc.articleContent = "<p>Google has recently expanded its <strong>Gemini 2.0</strong> model family...</p>"
                 
+                vc.articleContent = article.content
+                vc.articleTitle = article.title
+                vc.articleAuthor = article.author
                 self.present(vc, animated: true)
             })
             .disposed(by: disposeBag)
     }
     
     private func setupViews() {
-        pageTitle.text = "To be retrieved by API"
+        pageTitle.text = "Medium Feeds"
         pageTitle.font = UIFont.boldSystemFont(ofSize: 26)
         separatorView.backgroundColor = .black
         
@@ -90,34 +90,6 @@ class HomeViewController: UIViewController {
     }
     
     private func setupTableView() {
-//        feedTableView.dataSource = self
-//        feedTableView.delegate = self
         feedTableView.register(BlogPostCell.self, forCellReuseIdentifier: "BlogPostCell")
     }
 }
-
-//
-//extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return viewModel.blogPosts.count
-//    }
-//
-////    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-////        guard let cell = tableView.dequeueReusableCell(
-////            withIdentifier: "BlogPostCell",
-////            for: indexPath
-////        ) as? BlogPostCell else { return UITableViewCell() }
-////        cell.configure(with: viewModel.blogPosts[indexPath.row])
-////        return cell
-////    }
-//
-//    func tableView(
-//        _ tableView: UITableView,
-//        didSelectRowAt indexPath: IndexPath
-//    ) {
-//        let vc = ReaderWebViewController()
-//        vc.articleContent = "<p>Google has recently expanded its <strong>Gemini 2.0</strong> model family...</p>"
-//    
-//        present(vc, animated: true)
-//    }
-//}

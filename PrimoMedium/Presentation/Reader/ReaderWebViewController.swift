@@ -13,9 +13,9 @@ class ReaderWebViewController: UIViewController {
     var webView: WKWebView!
     
     // Your article data
-    var articleTitle: String = "Gemini 2.0 — what to know about the new model family (with code!)"
-    var articleAuthor: String = "Mikaeri Ohana"
-    var articleContent: String = "" // Will be injected
+    var articleTitle: String = ""
+    var articleAuthor: String = ""
+    var articleContent: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

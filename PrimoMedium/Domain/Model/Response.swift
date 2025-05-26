@@ -15,16 +15,20 @@ public class Response<T: Codable>: Decodable {
     }
     
     public let status: String
-//    public var feed: String?
+    public var feed: Feed
     var items: [T]?
 
     
     public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         status = try container.decode(String.self, forKey: CodingKeys.status)
-//        feed = try container.decodeIfPresent(String.self, forKey: CodingKeys.feed)
+        feed = try container.decode(Feed.self, forKey: CodingKeys.feed)
         items = try container
             .decodeIfPresent([T].self, forKey: CodingKeys.items)
 
     }
+}
+
+public class Feed: Codable {
+    var title: String
 }
