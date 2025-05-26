@@ -7,6 +7,12 @@
 
 struct Article: Codable {
     let title: String
-    let description: String
+    let detail: String
     let date: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case title
+        case detail = "description"
+        case date = "pubDate"
+    }
 }

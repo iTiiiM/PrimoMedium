@@ -28,8 +28,10 @@ class BlogPostCell: UITableViewCell {
     
     func configure(with post: Article) {
         titleLabel.text = post.title
-        descriptionLabel.text = post.description
-        dateLabel.text = post.date
+        descriptionLabel.attributedText = post.detail.formatHTMLToString()
+
+     
+        dateLabel.text = post.date?.formatAPIDate()
     }
     
     private func setupViews() {

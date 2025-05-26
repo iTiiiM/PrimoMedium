@@ -47,39 +47,6 @@ final class HomeViewModel: HomeViewModelIO {
             }
             .bind(to: _articles)
             .disposed(by: disposeBag)
-//
-//        articles = viewDidLoad
-//            .withUnretained(self)
-//            .flatMap {
-//                _ in self.loadArticleUseCase.execute()
-//            }
-//            .asDriver(onErrorJustReturn: [])
-//        
-//        articles = viewDidLoad
-//            .withUnretained(self)
-//            .map { owner, _ in
-//                print("MEWW VIEWDIDLOAD 2")
-//                return owner.blogPosts
-//            }
-//            .asDriver(onErrorJustReturn: [])
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    let blogPosts = [
-        Article(title: "Swift Concurrency", description: "Learn about async/await in Swift.",
-                 date: "Jan 5, 2025"),
-        Article(title: "UIKit vs SwiftUI", description: "A comparison of two UI frameworks.",
-                 date: "Nov 11, 2019"),
-        Article(
-            title: "Networking in iOS",
-            description: "Handling APIs with URLSession.",
-            date: "Oct 23, 2022"
-        )
-    ]
+
 }

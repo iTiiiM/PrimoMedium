@@ -31,7 +31,7 @@ class InMemoryLocalArticleDataSource: LocalArticleDataSource {
                 .map {
                     Article(
                         title: $0.title ?? "",
-                        description: $0.description ?? "",
+                        detail: $0.detail ?? "",
                         date: $0.date ?? ""
                     )
                 })
@@ -45,7 +45,8 @@ class InMemoryLocalArticleDataSource: LocalArticleDataSource {
         for article in articles {
             let entity = ArticleEntity(context: context)
             entity.title = article.title
-//            entity.description = article.description
+
+            entity.detail = article.detail
             entity.date = article.date
         }
         
